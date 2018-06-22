@@ -1,0 +1,27 @@
+{
+  "name": "practicalapp",
+  "version": "1.0.0",
+  "description": "a practical assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "keywords": [
+    "bacancy",
+    "practical",
+    "hardik",
+    "hdkhardik",
+    "assignment"
+  ],
+  "author": "hdkhardik",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "mssql": "^2.2.0",
+    "node-uuid": "^1.4.8",
+    "q": "^1.5.1"
+  }
+}
