@@ -4,7 +4,8 @@
   "description": "a practical assignment",
   "main": "index.js",
   "scripts": {
-    "test": "start"
+    "start": "NODE_ENV=production PORT=3000 nodemon index.js",    
+    "test": "NODE_ENV=developement PORT=4000 nodemon index.js"
   },
   "keywords": [
     "bacancy",
