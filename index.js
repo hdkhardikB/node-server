@@ -63,7 +63,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-app.use(express.static(__dirname + '/public/bacancy-app/dist/'));
+app.use(express.static(__dirname + '/public/'));
 
 //Defining separate routes for every modules.
 app.use('/', routes);
@@ -110,7 +110,7 @@ app.use('/orders', orders);
 app.all('/*', function (req, res, next) {
     // Just send the index.html for other files to support HTML5Mode
     res.sendFile('index.html', {
-        root: path.join(__dirname, '/public/bacancy-app/dist/')
+        root: path.join(__dirname, '/public/')
     });
 });
 app.listen(port, () => {
